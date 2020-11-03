@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Information.InformationFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="sans-serif-black"
+           android:layout_margin="20dp"
+           android:textColor="@color/colorPrimary"
+           android:text="Completa los siguientes campos para continuar"
+           android:textSize="30sp" />
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginTop="10dp"
+           android:id="@+id/layout_address">
+
+           <EditText
+               android:hint="Direccion"
+               android:id="@+id/address"
+               android:inputType="text"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+       </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginTop="10dp"
+           android:id="@+id/layout_phone">
+
+           <EditText
+               android:hint="Numero de telefono"
+               android:id="@+id/phone"
+               android:inputType="number"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+       </com.google.android.material.textfield.TextInputLayout>
+
+   </LinearLayout>
+    <Button
+        android:id="@+id/save_direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Informacion"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-medium"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

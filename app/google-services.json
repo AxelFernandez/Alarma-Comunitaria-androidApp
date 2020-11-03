@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "986983565013",
+    "firebase_url": "https://alarma-comunitaria-294500.firebaseio.com",
+    "project_id": "alarma-comunitaria-294500",
+    "storage_bucket": "alarma-comunitaria-294500.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986983565013:android:412faa2ed541ae2edf045c",
+        "android_client_info": {
+          "package_name": "com.axelfernandez.alarmacomunitaria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986983565013-qbahfo6o3mj1boqji8bgus6diinqubn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwBpW8cLdcvD6UrrtH5KMVjAn62WByArw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986983565013-qbahfo6o3mj1boqji8bgus6diinqubn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Alarma Comunitaria</string>
+    <string name="email">email</string>
+    <string name="given_name">given_name</string>
+    <string name="family_name">family_name</string>
+    <string name="picture">picture</string>
+    <string name="phone">phone</string>
+    <string name="username">username</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Alarmas Activadas</string>
+    <string name="title_notifications">Perfil</string>
+    <string name="address">address</string>
+    <string name="id">id</string>
+    <string name="is_completed_registered">isCompletedRegistered</string>
+</resources>
