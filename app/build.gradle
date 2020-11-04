@@ -13,7 +13,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-        buildConfigField "String", "hostname", '"alarmacomunitaria-herokuapp.com"'
+        buildConfigField "String", "hostname", '"alarma-comunitaria.herokuapp.com"'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -22,7 +22,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "hostname", '"alarmacomunitaria-herokuapp.com"'
+            buildConfigField "String", "hostname", '"alarma-comunitaria.herokuapp.com"'
 
         }
         local{
