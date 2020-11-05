@@ -42,6 +42,10 @@ class HomeFragment : Fragment() {
         }
 
         homeViewModel.returnResponse().observe(viewLifecycleOwner, Observer {
+            if(it == null){
+                ViewUtil.setSnackBar(root, R.color.red,getString(R.string.no_conection))
+            }
+            val it = it?:return@Observer
             if (it.done){
                 ViewUtil.setSnackBar(root,R.color.colorAccent,"Alarma Enviada Correctamente")
             }else{

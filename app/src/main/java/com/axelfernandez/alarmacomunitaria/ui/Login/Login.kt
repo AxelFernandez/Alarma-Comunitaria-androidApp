@@ -55,7 +55,6 @@ class Login : Fragment() {
         mGoogleSignInClient = GoogleSignIn.getClient(activity?.application!!, mGoogleSignInOptions)
 
         v.google_button_sigin.setOnClickListener{
-            v.google_button_sigin.isEnabled = false
             signIn()
         }
     }
@@ -77,6 +76,10 @@ class Login : Fragment() {
                 ViewUtil.putUserToSharedPreferences(requireContext(),user)
                 viewModel.registryUser(user)
                 viewModel.returnResponse().observe(viewLifecycleOwner, Observer {
+                    if(it == null){
+                        ViewUtil.setSnackBar(view,R.color.red,getString(R.string.no_conection))
+                    }
+                    val it = it?:return@Observer
                     user.id = it.clientId
                     user.username = it.username
 

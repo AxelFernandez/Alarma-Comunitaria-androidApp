@@ -46,6 +46,10 @@ class InformationFragment : Fragment() {
         }
 
         viewModel.returnResponse().observe(viewLifecycleOwner, Observer {
+            if(it == null){
+                ViewUtil.setSnackBar(view,R.color.red,getString(R.string.no_conection))
+            }
+            val it = it?:return@Observer
             if (it.done){
                 ViewUtil.setIsCompletedRegistered(requireContext(),true)
                 val intent = Intent(context, HomeActivity::class.java)

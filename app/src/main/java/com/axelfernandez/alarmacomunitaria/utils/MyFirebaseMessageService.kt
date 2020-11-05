@@ -31,7 +31,9 @@ class MyFirebaseMessageService : FirebaseMessagingService() {
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
 
         if (remoteMessage.notification != null) {
-            showNotification(remoteMessage.notification?.title, remoteMessage.notification?.body)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                showNotification(remoteMessage.notification?.title, remoteMessage.notification?.body)
+            }
         }
     }
 

@@ -13,4 +13,5 @@
     <string name="address">address</string>
     <string name="id">id</string>
     <string name="is_completed_registered">isCompletedRegistered</string>
+    <string name="no_conection">Hay problemas con la conexion a internet, o problemas con el servidor</string>
 </resources>
